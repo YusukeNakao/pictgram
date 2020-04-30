@@ -21,7 +21,7 @@ h1, h2 {
 
 .top-hero-wrapper {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url('bg-top.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -48,7 +48,7 @@ h1, h2 {
 
 .users-new-wrapper {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-image: image-url('bg-top.png');
   background-position: center center;
   background-repeat: no-repeat;
@@ -69,5 +69,5 @@ h1, h2 {
   margin-bottom: 0px;
   position: fixed;
   width: 100%;
-  z-index: 100000;
+  z-index: 10000;
 }

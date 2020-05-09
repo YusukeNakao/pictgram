@@ -1,6 +1,6 @@
 class TopicsController < ApplicationController
   def index
-    @topics = Topic.all
+    @topics　= Topic.all
   end
     
   def new
@@ -8,7 +8,7 @@ class TopicsController < ApplicationController
   end
   
   def create
-    @topic = current_user.topics.new(topic_params)
+    @topic = Topic.new(topic_params.merge(user_id: current_user.id))
     
     if @topic.save
       redirect_to topics_path, success: '投稿に成功しました'

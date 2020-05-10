@@ -1,6 +1,7 @@
 class TopicsController < ApplicationController
   def index
-    @topics　= Topic.all
+    @topics = Topic.all
+    # binding.pry
   end
     
   def new
